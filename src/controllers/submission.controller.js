@@ -1,9 +1,9 @@
 // this is submission.controller.js
 
 import Submission from "../models/submission.model.js";
-import { asyncHandler } from "../Utils/asyncHandler.js";
-import { ApiError } from "../Utils/ApiError.js";
-import { ApiResponse } from "../Utils/ApiResponse.js";
+import { asyncHandler } from "../utils/asyncHandler.js";
+import { ApiError } from "../utils/ApiError.js";
+import { ApiResponse } from "../utils/ApiResponse.js";
 
 
 export const submitTest = asyncHandler(async (req, res) => {

@@ -1,8 +1,8 @@
 // this is user.controller.js
 import User from '../models/user.model.js';
-import { asyncHandler } from '../Utils/asyncHandler.js';
-import { ApiError } from '../Utils/ApiError.js'
-import { ApiResponse } from '../Utils/ApiResponse.js';
+import { asyncHandler } from '../utils/asyncHandler.js';
+import { ApiError } from '../utils/ApiError.js'
+import { ApiResponse } from '../utils/ApiResponse.js';
 
 
 // login controller
