@@ -16,13 +16,17 @@ app.use(cors({
 }))
 
 app.use(express.json({limit: "16kb"}))
-app.use(express.urlencoded())
+app.use(express.urlencoded({ extended: true }))
 app.use(express.static("public"))
 app.use(cookieParser())
 
 
 
 // Routes
+app.get('/', (req, res) => {
+  res.send('API is running...');
+});
+
 app.use('/api/auth', authRoutes);
 app.use('/api/tests', testRoutes);
 app.use('/api/submissions', submissionRoutes);
